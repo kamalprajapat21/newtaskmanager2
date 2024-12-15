@@ -1,0 +1,53 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #e63946; /* A more modern red shade */
+    align-items: center;
+    height: 70px; /* Slightly increased height for better aesthetics */
+    padding: 0 30px; /* Increased padding for a balanced layout */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Adds a shadow for a 3D effect */
+    border-radius: 8px; /* Rounds the corners of the header */
+
+    &__logo {
+        h5 {
+            color: white;
+            font-weight: 500; /* Slightly bolder for better visibility */
+            font-size: 1.5rem; /* Larger font for logo text */
+            letter-spacing: 1px; /* Spacing between letters for a modern feel */
+        }
+    }
+
+    .button1,
+    .button2 {
+        padding: 10px 20px; /* Adds padding inside buttons for a sleek look */
+        font-size: 1rem; /* Standard font size for buttons */
+        font-weight: 500;
+        border: none;
+        border-radius: 5px; /* Smooth rounded corners */
+        cursor: pointer;
+        transition: all 0.3s ease; /* Smooth transitions for hover effects */
+    }
+
+    .button1 {
+        background-color: white;
+        color: #e63946; /* Matches the header color for cohesion */
+        margin-right: 15px; /* Spacing between buttons */
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Adds depth to the button */
+    }
+
+    .button1:hover {
+        background-color: #f1f1f1; /* Light gray for hover effect */
+        transform: scale(1.05); /* Slightly enlarges on hover */
+    }
+
+    .button2 {
+        background-color: #b7dc0e;
+        color: #2c2c2c; /* A dark color for contrast */
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    .button2:hover {
+        background-color: #a3c70d; /* Darker green on hover */
+        transform: scale(1.05);
+    }
+}

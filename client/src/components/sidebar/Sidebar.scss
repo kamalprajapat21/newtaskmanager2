@@ -1,0 +1,55 @@
+.sidebar {
+    background-color: #008080; /* Rich teal shade */
+    color: white;
+    height: 100vh; /* Full viewport height */
+    padding: 1.5rem; /* Increased padding for spacious layout */
+    max-width: 18vw; /* Slightly wider for better usability */
+    display: flex;
+    flex-direction: column; /* Align items vertically */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow for depth */
+    border-radius: 10px 0 0 10px; /* Rounds left corners */
+    font-family: 'Arial', sans-serif; /* Modern font choice */
+    position: sticky; /* Sticks the sidebar on scroll */
+    top: 0; /* Keeps the sidebar fixed at the top of the screen */
+    overflow-y: auto; /* Ensures scrolling if content overflows */
+    z-index: 10; /* Ensures it stays above other content */
+  }
+  
+  .sidebar .list-item {
+    margin: 1rem 0; /* Spacing between list items */
+    padding: 0.8rem 1.2rem; /* Adds padding for clickable area */
+    font-size: 1.2rem; /* Larger font size for readability */
+    font-weight: 500; /* Bold font for emphasis */
+    background-color: #005f5f; /* Slightly darker teal for list items */
+    border-radius: 8px; /* Smooth rounded edges */
+    transition: all 0.3s ease; /* Smooth hover animations */
+    cursor: pointer; /* Pointer cursor on hover */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15); /* Subtle shadow for list items */
+    white-space: nowrap; /* Prevents text from wrapping */
+    overflow: hidden; /* Hides overflow text */
+    text-overflow: ellipsis; /* Adds ellipsis (...) for overflowing text */
+  }
+  
+  .sidebar .list-item:hover {
+    background-color: #007a7a; /* Brighter teal on hover */
+    transform: scale(1.05); /* Slight enlargement for interactivity */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+  }
+  
+  .sidebar .list-item:active {
+    background-color: #004f4f; /* Darker teal for active state */
+    transform: scale(0.98); /* Slight shrink for active feedback */
+  }
+  
+  .sidebar .logo {
+    font-size: 1.8rem; /* Large font size for logo */
+    font-weight: 700; /* Bold font for emphasis */
+    margin-bottom: 2rem; /* Space below the logo */
+    text-align: center; /* Centered logo */
+    color: #ffffff; /* Pure white for visibility */
+    letter-spacing: 2px; /* Adds spacing between letters */
+    white-space: nowrap; /* Prevents logo text from wrapping */
+    overflow: hidden; /* Hides overflow logo text */
+    text-overflow: ellipsis; /* Adds ellipsis (...) for overflowing text */
+  }
+  

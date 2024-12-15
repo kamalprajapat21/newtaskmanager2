@@ -1,0 +1,18 @@
+{
+  "name": "taskmanager",
+  "version": "1.0.0",
+  "main": "server.js",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "concurrently": "^8.2.0",
+    "mongoose": "^8.9.0"
+  },
+  "scripts": {
+    "client": "npm --prefix client run dev",
+    "server": "nodemon server/server.js",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "description": "### to run app #### go to each individial folder and run yarn or yarn install #### go back to root folder and run yarn start",
+  "author": ""
+}
